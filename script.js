@@ -10,7 +10,7 @@ words.forEach((word)=>{
      });
 });
 
-let currentWordIndex = 0;
+let currentWordIndex = 0; 
 let maxWordIndex = words.length -1;
 words[currentWordIndex].style.opacity = "1";
 
@@ -59,3 +59,7 @@ circle.forEach(elem=>{
     }
     
 })
+
+///Mixing Portfolio Section//////////////////////////////
+
+var mixer = mixitup('.portfolio-gallery');
