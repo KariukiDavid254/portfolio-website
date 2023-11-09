@@ -29,6 +29,22 @@
 
 }
 
+::-webkit-scrollbar{
+    height: 0;
+    width: .5rem;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--hover-color);
+    border-radius: 5rem;
+}
+
+::-webkit-scrollbar-track{
+    background: var(--secon-bg-color);
+}
+
+
+
 body{
     font-family: "Poppins",sans-serif;
     background-color: var(--bg-color);
@@ -36,12 +52,22 @@ body{
 }
 
 header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    border-bottom: 1px solid transparent;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     padding: 20px 10%;
 
+}
+header.sticky{
+    background: var(--bg-color);
+    border-bottom: 1px solid var(--secon-bg-color);
+    padding: 12px 10%;
 }
 
 .logo{
@@ -74,6 +100,11 @@ span{
     0 0 80px rgba(18,247,255,0.6),
     0 0 100px rgba(18,247,255,0.6),
     0 0 150px rgba(18,247,255,0.6);
+}
+
+.navlist a.active{
+    color: var(--hover-color);
+    
 }
 
 #menu-icon{
