@@ -89,12 +89,31 @@ window.addEventListener("scroll",function(){
     header.classList.toggle("sticky",this.window.scrollY > 50)
 })
 
-//Toggle icon NavbBar//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Toggle icon NavBar//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// let menuIcon = document.querySelector("#menu-icon");
+// let navList = document.querySelector(".navlist");
+
+// menuIcon.onclick = ()=>{
+//     menuIcon.classList.toggle("bx bx-menu");
+//     navList.classList.toggle("open");
+    
+// }
+
+// window.onscroll = ()=>{
+//     menuIcon.classList.remove("bx-x");
+//     navList.classList.remove("open");
+    
+// }
+
 let menuIcon = document.querySelector("#menu-icon");
 let navList = document.querySelector(".navlist");
 
-menuIcon.onclick = ()=>{
-    menuIcon.classList.toggle("bx-x");
-    navList.classList.toggle("open");
-    
-}
+menuIcon.onclick = () => {
+  menuIcon.classList.toggle("bx-menu");
+  navList.classList.toggle("open");
+};
+
+window.onscroll = () => {
+  menuIcon.classList.remove("bx-menu");
+  navList.classList.remove("open");
+};
